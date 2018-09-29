@@ -1,0 +1,8 @@
+
+	<form method="POST">
+		{% csrf_token %}
+			{{form_data.as_p}}
+			<input type="submit" value="save"/>
+			
+
+	</form>

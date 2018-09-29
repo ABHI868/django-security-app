@@ -1,0 +1,13 @@
+</b><p>Visitors Form</p></b>
+<form action="{% url 'Sangaria:submit'%}",method="POST">
+    {% csrf_token %}
+    <input type="text" name="Name" required>Name<br>
+    <input type="text" name="Address" >Address<br>
+    <input type="text" name="Gmail" required>Gmail<br>
+    <input type="text" name="Telephone" required>Telephone<br>
+    <input type="text" name="checkIn" required>checkIn<br>
+    <input type="text" name="checkOut" required>checkOut<br>
+
+    <input type="submit" value="Submit">
+
+</form>

@@ -1,0 +1,6 @@
+<p>Welcome to the maintenance window</p>
+<form method="POST">
+	{% csrf_token %}
+	{{form_data.as_p}}
+	<input type="Submit" value="maintenance">
+</form>

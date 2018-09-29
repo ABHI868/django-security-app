@@ -1,0 +1,11 @@
+{% load static  %}
+
+<p>This is Home Page</p>
+{% for visitor in all_visitors %}
+    <li>Sr.No:{{visitor.pk}} &nbsp;&nbsp;&nbsp;&nbsp; Name:{{visitor.Name}}&nbsp;&nbsp;&nbsp;&nbsp;check-in:-{{visitor.checkin}}&nbsp;&nbsp;&nbsp;&nbsp;check-out:-{{visitor.checkout}}</li>
+{% endfor %}
+<form action="{% url 'Sangaria:form' %}" method ="POST">
+    {% csrf_token %}
+
+    <button class="button " color:green>Add Visitor</button> 
+</form>
